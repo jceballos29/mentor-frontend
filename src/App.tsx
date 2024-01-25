@@ -1,11 +1,11 @@
-import './App.css'
+import { RecipePage } from './challenges';
 
 function App() {
-
-  return (
-    <main>
-    </main>
-  )
+	return (
+		<main>
+			<RecipePage />
+		</main>
+	);
 }
 
-export default App
+export default App;

@@ -1,9 +1,9 @@
-import { RecipePage } from './challenges';
+import { SocialLinksProfile } from './challenges';
 
 function App() {
 	return (
 		<main>
-			<RecipePage />
+			<SocialLinksProfile />
 		</main>
 	);
 }

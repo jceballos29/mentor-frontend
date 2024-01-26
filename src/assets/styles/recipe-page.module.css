@@ -45,7 +45,7 @@
   margin: 0 auto;
 }
 
-header, .content {
+.header, .content {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
 }
@@ -73,13 +73,13 @@ header, .content {
 }
 
 
-img {
+.image {
   width: 100%;
   border-radius: 1rem;
   object-fit: contain;
 }
 
-h1 {
+.title {
   font-family: var(--font-heading);
   color: var(--dark-charcoal);
   margin-top: 2.75rem;
@@ -89,7 +89,7 @@ h1 {
   font-weight: 400;
 }
 
-h2 {
+.subtitle {
   font-family: var(--font-heading);
   font-weight: 400;
   color: var(--nutmeg);
@@ -98,7 +98,7 @@ h2 {
   margin-bottom: 1rem;
 }
 
-h3 {
+.preparation_title {
   color: var(--dark-raspberry);
   font-size: 1.25rem;
   line-height: 1.75rem;
@@ -106,28 +106,28 @@ h3 {
 }
 
 
-aside {
+.preparation {
   background-color: var(--rose-white);
   border-radius: 1rem;
   padding: 1.25rem 2rem;
   margin-top: 2rem;
 }
 
-ul, ol {
+.list{
   padding-left: 1.5rem;
 }
 
-li {
+.list_item {
   padding-left: 1rem;
   margin-bottom: 0.5rem;
 }
 
-li::marker {
+.list_item::marker {
   color: var(--dark-raspberry);
   font-weight: 600;
 }
 
-section {
+.section {
   margin-top: 2rem;
   border-bottom: 1px solid var(--border);
   padding-bottom: 2rem;
@@ -145,7 +145,7 @@ section {
     padding: 0;
   }
 
-  header {
+  .header {
     padding: 0;
   }
 
@@ -154,19 +154,19 @@ section {
     padding-right: 2rem;
   }
 
-  img {
+  .image {
     border-radius: 0;
   }
 
-  h1 {
+  .title {
     font-size: 2rem;
   }
 
-  h2 {
+  .subtitle {
     font-size: 1.5rem;
   }
 
-  h3 {
+  .preparation_title {
     font-size: 1.125rem;
   }
 
@@ -178,7 +178,7 @@ section {
     padding: 0.5rem 0.5rem;
   }
 
-  aside {
+  .preparation {
     padding: 1.5rem 1.75rem;
   }
 }

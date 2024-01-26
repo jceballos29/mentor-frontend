@@ -1,19 +1,14 @@
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { Route, Routes } from 'react-router-dom';
 import { Home } from './components';
 import { challenges } from './utils';
 
-const router = createBrowserRouter([
-	{
-		path: '/',
-		Component: Home
-	},
-	...challenges.map(route => ({ path: route.path, Component: route.component }))
-])
-
-if (import.meta.hot) {
-  import.meta.hot.dispose(() => router.dispose());
-}
-
 export default function App() {
-	return <RouterProvider router={router} />;
+	return <Routes>
+		<Route path="/" element={<Home />} />
+		{
+			challenges.map((challenge) => (
+				<Route key={challenge.id} path={challenge.path} element={<challenge.component />} />
+			))
+		}
+	</Routes>;
 }
